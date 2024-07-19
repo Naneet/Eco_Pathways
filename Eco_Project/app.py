@@ -20,9 +20,13 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 @app.route('/login')
-def contact():
+def login():
     return render_template('login.html')
 
 @app.route('/register')
-def contact():
+def register():
     return render_template('register.html')
+
+@app.route('/map')
+def map():
+    return render_template('maps.html')
