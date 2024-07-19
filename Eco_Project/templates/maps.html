@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% include "header.html" %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,27 +15,6 @@
     <link rel="icon" href="../assets/favicon/icon.png">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Eco-Friendly-Nav</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    User Info
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="./userdata.html" id="usernameDisplay">Loading...</a>
-                    <a class="dropdown-item" href="#" id="showCarbonFootprint">Show Carbon Footprint</a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-
 <div class="form-inline">
     <input type="text" class="form-control mb-2 mr-sm-2" id="origin" placeholder="Origin">
     <input type="text" class="form-control mb-2 mr-sm-2" id="destination" placeholder="Destination">
@@ -149,5 +129,6 @@ $(document).ready(function() {
 
 </script>
 
+{% include "footer.html" %}
 </body>
 </html>

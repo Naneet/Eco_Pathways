@@ -228,7 +228,7 @@ p {
 }
 
 /*wave and animation*/
-footer .wave {
+/* footer .wave {
   position: absolute;
   top: -100px;
   left: 0;
@@ -281,4 +281,4 @@ footer .wave#wave4 {
   100% {
     background-position-x: 1000px;
   }
-}
+} */

@@ -1,0 +1,19 @@
+{% include "header.html" %}
+
+<style>
+    #button_submit{
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <form method="post" action="/login">
+            <label for="user">Email or Username:</label><br>
+            <input type="text" class="feedback-input" name="user" placeholder="Username"><br>
+            <label for="pass">Password:</label><br>
+            <input type="text" class="feedback-input" name="pass" placeholder="Password">
+            <input type="submit" id="button_submit" value="SUBMIT" />
+    </form>
+</body>
+
+{% include "footer.html" %}
